@@ -1,0 +1,54 @@
+@font-face {
+    font-family: rondo;
+    src: url(rondo.ttf);
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    height: 100vh;
+    background: rgb(249,255,33);
+    background: radial-gradient(circle, rgba(249,255,33,1) 0%, rgba(255,214,21,1) 44%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+    color: rgb(249,255,33);
+    font-family: rondo;
+    letter-spacing: -2px;
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+.container
+{
+    background-color: #ff1f5a;
+    padding: 32px 64px 128px 64px;
+
+    border-radius: 5%;
+    box-shadow: 20px 20px 80px rgb(58, 1, 1);
+}
+.grid-container {
+    background-color: white;
+
+    border: 1px solid black;
+    flex-shrink: 0;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid-item {
+    box-sizing: border-box;
+}
+
+.grid-item:hover {
+    background-color: lightgray;
+}
