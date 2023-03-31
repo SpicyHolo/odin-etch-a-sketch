@@ -10,16 +10,24 @@
 </head>
 <body>
     <main>
-        <div class="container">
-            <header>Etch A Sketch</header>
-            <div class="grid-container"></div>
-            <nav>
-                <button id="clear">clear</button>
-                <button>color picker</button>
-                <button>grid Size</button>
-            </nav>
-        
+        <div class="container not-draggable">
+            <header class="not-draggable">Etch A Sketch</header>
+            <div class="grid-container not-draggable"></div>
+
+            <div class="options not-draggable">
+                <button id="clear" class="not-draggable grow-on-hover"><img src="Dookie_nookie.svg" alt="clear button"/></button>
+                <div class="slider-container">
+                    <p class="grid-size-text"></p>
+                    <input type="range" min="8" max="64" value="16" class="slider" id="gridSize" class="not-draggable">
+                </div>
+                <input type="color" name="colorPicker" id="colorPicker" class="not-draggable grow-on-hover" value="#000000">
+            </div>
         </div>
+        <footer>
+            <a href="https://github.com/SpicyHolo">GitHub@SpicyHolo</a>
+            <a href="https://theodinproject.com/">The Odin Project</a>
+        </footer>
     </main>
+
 </body>
 </html>
